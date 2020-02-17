@@ -127,7 +127,7 @@ const express = require("express");
 const app = express();
 const http = require("http").createServer(app);
 const chalk = require("chalk");
-const port = 4000;
+const port = process.env.PORT || 4000;;
 const cors = require("cors");
 
 const bodyParser = require("body-parser");
